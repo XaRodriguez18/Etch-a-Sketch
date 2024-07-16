@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 1em;
+}
+
+main {
+    height: 100%;
+}
+
+#container {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.child {
+    width: 25%;
+    aspect-ratio: 1 / 1;
+}
