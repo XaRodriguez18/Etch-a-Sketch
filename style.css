@@ -11,6 +11,7 @@ main {
     display: flex;
     height: 100%;
     flex-wrap: wrap;
+    padding: 5% 20%;
 }
 
 .child {
