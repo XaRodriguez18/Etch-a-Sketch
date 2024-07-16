@@ -1,5 +1,9 @@
 const container = document.querySelector('#container');
 
+function random(number) {
+    return Math.floor(Math.random() * number + 1);
+}
+
 const createSquares = (rows) => {
     for (let i = 0; i < (rows * rows); i++) {
         let square = document.createElement("div");
@@ -8,7 +12,9 @@ const createSquares = (rows) => {
         square.style.width = `${squareWidth}%`
         container.appendChild(square);
         square.addEventListener('mouseover', () => {
-            square.style.backgroundColor = 'red';
+            let rndCol = "rgb(" + random(255) + "," + random(255) + "," + random(255)
+            + ")";
+            square.style.backgroundColor = rndCol;
         })
     }
 }
