@@ -21,9 +21,9 @@ main {
     width: 400px;
     flex-wrap: wrap;
     margin-top: 5rem;
+    border: 1px solid black;
 }
 
 .child {
-    width: 25%;
     aspect-ratio: 1 / 1;
 }
